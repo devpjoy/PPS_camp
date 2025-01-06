@@ -13,6 +13,8 @@ You need to output 1.
 Input: g = [5, 2, 4, 3, 1], s = [3, 1]
 g = [1, 2, 3, 4, 5], s = [3, 5]
 Output: 2
+
+27분
 */
 
 
@@ -25,7 +27,7 @@ class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
         int output = 0;
-        while (g.size() >= 1 && g.size() <= 3 * (10^4) && s.size() >= 0 && s.size() <= 3 * (10^4)) {
+        if (g.size() >= 1 && g.size() <= 30000 && s.size() >= 0 && s.size() <= 30000) {
             //오름차순으로 sort
             sort(g.begin(), g.end()); 
             sort(s.begin(), s.end());
@@ -48,6 +50,10 @@ public:
 int main() {
     vector<int> g = {5, 4, 3, 2, 1};
     vector<int> s = {3, 5};
-    
+
+    Solution solution;
+
+    cout << "Output: " << solution.findContentChildren(g, s) << endl;
+
     return 0; 
 }
