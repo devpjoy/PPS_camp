@@ -37,9 +37,12 @@ public:
             //아이가 원하는 최소 쿠키의 크키보다 쿠키의 사이즈가 크거나 같아야 한다.
             //즉 g[i] <= s[j]
             //위의 사항을 만족시키면 output++을 시켜야 한다.
-            for (int i = 0; i < g.size(); i++) {
-                for (int j = 0; j < s.size(); j++) {
-                    if (g[i] <= s[j]) output ++;
+            int i = 0, j = 0;
+
+            for (i = 0; i < g.size(); i++) {
+                if (g[i] <= s[j] && j < s.size()) {
+                    output++;
+                    j++;
                 }
             }
         }
@@ -48,8 +51,8 @@ public:
 };
 
 int main() {
-    vector<int> g = {5, 4, 3, 2, 1};
-    vector<int> s = {3, 5};
+    vector<int> g = {1, 2};
+    vector<int> s = {1, 2, 3};
 
     Solution solution;
 
