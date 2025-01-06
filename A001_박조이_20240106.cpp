@@ -4,25 +4,50 @@
 //적어도 하나의 쿠키는 주어야 한다.
 
 /*
-Input: g = [1,2,3], s = [1,1]
+Input: g = [1,2,3], s = [1, 1]
 Output: 1
 Explanation: You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3. 
 And even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content.
 You need to output 1.
+
+Input: g = [5, 2, 4, 3, 1], s = [3, 1]
+g = [1, 2, 3, 4, 5], s = [3, 5]
+Output: 2
 */
 
+
 #include <iostream> 
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
-        
+        int output = 0;
+        while (g.size() >= 1 && g.size() <= 3 * (10^4) && s.size() >= 0 && s.size() <= 3 * (10^4)) {
+            //오름차순으로 sort
+            sort(g.begin(), g.end()); 
+            sort(s.begin(), s.end());
+
+            //g[i]는 한 아이가 원하는 최소 쿠키의 크기
+            //s[j]는 쿠키의 사이즈
+            //아이가 원하는 최소 쿠키의 크키보다 쿠키의 사이즈가 크거나 같아야 한다.
+            //즉 g[i] <= s[j]
+            //위의 사항을 만족시키면 output++을 시켜야 한다.
+            for (int i = 0; i < g.size(); i++) {
+                for (int j = 0; j < s.size(); j++) {
+                    if (g[i] <= s[j]) output ++;
+                }
+            }
+        }
+        return output;
     }
 };
 
-int main() 
-{
+int main() {
+    vector<int> g = {5, 4, 3, 2, 1};
+    vector<int> s = {3, 5};
+    
     return 0; 
 }
