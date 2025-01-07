@@ -1,10 +1,14 @@
-//A003 : Plus One (leetcode) - Easy
-/* 주어진 정수 배열을 하나의 정수 값이라고 생각했을 때, 그 정수에 1을 더한 값을 다시 배열의 형태로 return하는 함수를 작성한다.*/
-/* 50분 소요 */
+/* 
+작성자 : 박조이 (22200313)
+문제 번호 : A003
+문제 제목 : Plus One (by leetcode)
+문제 설명 : 주어진 정수 배열을 하나의 정수 값이라고 생각했을 때, 그 정수에 1을 더한 값을 다시 배열의 형태로 return하는 함수를 작성한다.
+문제 난이도 : Easy
+소요 시간 : 00시간 50분
+*/
 
 #include <iostream> 
 #include <vector>
-#include <string>
 
 using namespace std;
 
