@@ -2,9 +2,9 @@
 /* 파스칼 삼각형의 rowNumber가 주어졌을 때, 그 삼각형의 각 값을 배열의 형태로 return하는 함수를 작성한다. */
 /* 1시간 소요 */
 
+
 #include <iostream> 
 #include <vector>
-
 
 using namespace std;
 
@@ -28,19 +28,25 @@ public:
 
 int main() {
     Solution solution;
-    vector<vector<int>> result = solution.generate(6);
-    
-    cout << "[";
-    for (int i = 0; i < result.size(); i++) {
+    int numRows = 5;
+
+    if (numRows > 30) {
+        cout << "numRows must not larger than 30." << endl;
+    } else {
+        vector<vector<int>> result = solution.generate(numRows);
+        
         cout << "[";
-        for (int j = 0; j < result[i].size(); j++) { 
-            cout << result[i][j];
-            if (j != result[i].size() - 1) cout << ","; 
+        for (int i = 0; i < result.size(); i++) {
+            cout << "[";
+            for (int j = 0; j < result[i].size(); j++) { 
+                cout << result[i][j];
+                if (j != result[i].size() - 1) cout << ","; 
+            }
+            cout << "]";
+            if (i != result.size() - 1) cout << ",";
         }
-        cout << "]";
-        if (i != result.size() - 1) cout << ",";
+        cout << "]" << endl;
     }
-    cout << "]" << endl;
 
     return 0; 
 }
