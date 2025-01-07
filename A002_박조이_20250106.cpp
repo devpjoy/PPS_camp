@@ -35,7 +35,7 @@ int main() {
     int numRows = 5;
 
     if (numRows > 30) {
-        cout << "numRows must not larger than 30." << endl;
+        cout << "numRows must not be larger than 30." << endl;
     } else {
         vector<vector<int>> result = solution.generate(numRows);
         
