@@ -4,20 +4,34 @@
 문제 제목 : 문자열 다루기 기본 (by programmers)
 문제 설명 : 문자열 s의 길이가 4 혹은 6이고, 숫자로만 구성돼있는지 확인해주는 함수 작성
 문제 난이도 : Very Easy
-소요 시간 : 00시간 00분 
+소요 시간 : 00시간 12분 
 */
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include <string>
+#include <vector>
+#include <iostream>
 
-// 파라미터로 주어지는 문자열은 const로 주어집니다. 변경하려면 문자열을 복사해서 사용하세요.
-bool solution(const char* s) {
+using namespace std;
+
+bool solution(string s) {
     bool answer = true;
+
+    if ((s.length() == 4) || (s.length() == 6)) {
+        for (int i = 0; i < s.length(); i ++) {
+            if (s[i] < '0' || s[i] > '9') {
+                answer = false;
+                break;
+            }
+        }
+    }
     return answer;
 }
 
-int main() {
-    
+int main () {
+    string s1 = "a234"; // False
+    string s2 = "1234"; // True
+
+    if (solution(s1)) cout << "True" << endl;
+    else cout << "False" << endl;
 }
 
