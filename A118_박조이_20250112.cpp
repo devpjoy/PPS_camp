@@ -3,7 +3,7 @@
 문제 번호 : A118
 문제 제목 : Move Zeroes (by leetcode)
 문제 난이도 : Very Easy
-소요 시간 : 00시간 00분 
+소요 시간 : 00시간 07분 
 */
 
 #include <iostream>
@@ -29,7 +29,7 @@ public:
         for (int i = 0; i < nums.size(); i ++) {
             cout << nums[i] << " ";
         }
-        
+
         cout << endl;
     }
 };
