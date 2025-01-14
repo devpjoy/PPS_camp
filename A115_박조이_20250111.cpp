@@ -3,7 +3,7 @@
 문제 번호 : A115
 문제 제목 : Maximum Number of Balloons (by leetcode)
 문제 난이도 : Very Easy
-소요 시간 : 00시간 00분 
+소요 시간 : 00시간 13분 
 */
 
 #include <iostream>
@@ -35,5 +35,5 @@ int main () {
     Solution solution;
     cout << "Output :" << solution.maxNumberOfBalloons(text1) << endl; // 1
     cout << "Output :" << solution.maxNumberOfBalloons(text2) << endl; // 2
-    cout << "Output :" << solution.maxNumberOfBalloons(text3) << endl; // 0
+    cout << "Output :" << solution.maxNumberOfBalloons(text3) << endl; // 0 
 }
