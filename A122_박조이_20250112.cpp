@@ -54,4 +54,6 @@ int main () {
 
     if (solution.rotateString(s2, g2)) cout << "true" << endl;
     else cout << "false" << endl;
+
+    return 0;
 }

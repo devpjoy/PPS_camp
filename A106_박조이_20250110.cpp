@@ -10,7 +10,7 @@
 #include <vector>
 
 using namespace std;
-
+ 
 int main () {
     int n, m;
     int sum1 = 0; //1부터 n까지 다 더한 값

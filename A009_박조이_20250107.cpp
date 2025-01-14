@@ -7,7 +7,6 @@
 */
 
 #include <string>
-#include <vector>
 #include <iostream>
 
 using namespace std;
@@ -32,5 +31,6 @@ int main () {
 
     if (solution(s1)) cout << "True" << endl;
     else cout << "False" << endl;
+    return 0;
 }
 

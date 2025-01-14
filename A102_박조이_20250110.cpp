@@ -1,6 +1,6 @@
 /* 
 작성자 : 박조이 (22200313) 
-문제 번호 : A102
+문제 번호 : A102 
 문제 제목 : Transpose Matrix (by leetcode)
 문제 난이도 : Very Easy
 소요 시간 : 00시간 22분 

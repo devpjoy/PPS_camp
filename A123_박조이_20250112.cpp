@@ -7,7 +7,6 @@
 */
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -37,4 +36,6 @@ int main () {
     }
 
     cout << count << endl;
+
+    return 0;
 }

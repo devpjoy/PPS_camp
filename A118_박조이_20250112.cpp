@@ -39,4 +39,6 @@ int main () {
 
     Solution solution;
     solution.moveZeroes(nums);
+
+    return 0;
 }

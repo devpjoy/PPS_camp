@@ -6,7 +6,6 @@
 소요 시간 : 00시간 40분 
 */
 
-#include <algorithm>
 #include <vector>
 #include <iostream>
 

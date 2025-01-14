@@ -7,7 +7,6 @@
 */
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -36,4 +35,6 @@ int main () {
     cout << "Output :" << solution.maxNumberOfBalloons(text1) << endl; // 1
     cout << "Output :" << solution.maxNumberOfBalloons(text2) << endl; // 2
     cout << "Output :" << solution.maxNumberOfBalloons(text3) << endl; // 0 
+    
+    return 0;
 }
