@@ -1,5 +1,5 @@
-/* 
-작성자 : 박조이 (22200313)  
+/*
+작성자 : 박조이 (22200313)
 문제 번호 : A126
 문제 제목 : 한수 (by 백준)
 문제 난이도 : Very Easy
@@ -13,7 +13,7 @@ using namespace std;
 
 int main () {
     int n;
-    cin >> n;
+    cin >> n; 
 
     if (n > 1000) {
         cout << "It should be (n <= 1000)" << endl; 
